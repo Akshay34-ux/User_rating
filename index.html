@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Rating</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Project Rating</h1>
+      <p>Your opinion matters-leave a review!</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="rating-container">
+    <h2>Rate Us</h2>
+    
+    <!-- Name field -->
+    <div class="name-field">
+      <input type="text" id="user-name" placeholder="Your Name" />
+    </div>
+
+    <!-- Star rating section -->
+    <div class="stars">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+
+    <!-- Rating result -->
+    <p id="rating-result">Please select a rating</p>
+
+    <!-- Written feedback section -->
+    <div class="feedback">
+      <textarea id="feedback-text" placeholder="Write your feedback..."></textarea>
+    </div>
+
+    <!-- Submit feedback button -->
+    <button id="submit-feedback">Submit Feedback</button>
+  </div>
+
+  <!-- Other User Feedback Container -->
+  <div class="other-feedback-container">
+    <h3>Other People's Feedback</h3>
+    <div id="other-feedbacks" class="feedback-list">
+      <!-- Feedbacks will appear here -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Website | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
